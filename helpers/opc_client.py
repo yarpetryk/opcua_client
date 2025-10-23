@@ -9,8 +9,7 @@ class OPCClient:
     def __init__(self, url: str):
         self.client = Client(url)
         self.client.set_user("admin")
-        self.client.set_password("admin")
-        self.connect() 
+        self.client.set_password("admin") 
     
     def connect(self):
         """Connect to the OPC UA server"""
