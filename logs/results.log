@@ -1,0 +1,57 @@
+2025-10-23 16:27:32     INFO [ua_client::connect_socket] opening connection
+2025-10-23 16:27:32     INFO [ua_client::_run] Thread started
+2025-10-23 16:27:32    DEBUG [connection::receive_from_socket] Waiting for header
+2025-10-23 16:27:32     INFO [connection::receive_from_socket] received header: Header(type:b'ACK', chunk_type:b'F', body_size:20, channel:0)
+2025-10-23 16:27:32    DEBUG [connection::receive_from_socket] Waiting for header
+2025-10-23 16:27:32     INFO [ua_client::open_secure_channel] open_secure_channel
+2025-10-23 16:27:32    DEBUG [ua_client::_send_request] Sending: OpenSecureChannelRequest(TypeId:{self.TypeId}, RequestHeader:{self.RequestHeader}, Parameters:{self.Parameters})
+2025-10-23 16:27:32     INFO [connection::receive_from_socket] received header: Header(type:b'OPN', chunk_type:b'F', body_size:123, channel:6)
+2025-10-23 16:27:32    DEBUG [connection::receive_from_socket] Waiting for header
+2025-10-23 16:27:32     INFO [ua_client::create_session] create_session
+2025-10-23 16:27:32    DEBUG [ua_client::_send_request] Sending: CreateSessionRequest(TypeId:{self.TypeId}, RequestHeader:{self.RequestHeader}, Parameters:{self.Parameters})
+2025-10-23 16:27:32     INFO [connection::receive_from_socket] received header: Header(type:b'MSG', chunk_type:b'F', body_size:565, channel:6)
+2025-10-23 16:27:32    DEBUG [connection::receive_from_socket] Waiting for header
+2025-10-23 16:27:32    DEBUG [ua_client::create_session] CreateSessionResponse(TypeId:{self.TypeId}, ResponseHeader:{self.ResponseHeader}, Parameters:{self.Parameters})
+2025-10-23 16:27:32    DEBUG [client::run] starting keepalive thread with period of 2520000.0 milliseconds
+2025-10-23 16:27:32  WARNING [client::_add_user_auth] Sending plain-text password
+2025-10-23 16:27:32     INFO [ua_client::activate_session] activate_session
+2025-10-23 16:27:32    DEBUG [ua_client::_send_request] Sending: ActivateSessionRequest(TypeId:{self.TypeId}, RequestHeader:{self.RequestHeader}, Parameters:{self.Parameters})
+2025-10-23 16:27:32     INFO [connection::receive_from_socket] received header: Header(type:b'MSG', chunk_type:b'F', body_size:84, channel:6)
+2025-10-23 16:27:32    DEBUG [connection::receive_from_socket] Waiting for header
+2025-10-23 16:27:32    DEBUG [ua_client::activate_session] ActivateSessionResponse(TypeId:{self.TypeId}, ResponseHeader:{self.ResponseHeader}, Parameters:{self.Parameters})
+2025-10-23 16:27:32     INFO [opc_client::connect] Connected to OPC UA server
+2025-10-23 16:27:32     INFO [ua_client::read] read
+2025-10-23 16:27:32    DEBUG [ua_client::_send_request] Sending: ReadRequest(TypeId:{self.TypeId}, RequestHeader:{self.RequestHeader}, Parameters:{self.Parameters})
+2025-10-23 16:27:32     INFO [connection::receive_from_socket] received header: Header(type:b'MSG', chunk_type:b'F', body_size:70, channel:6)
+2025-10-23 16:27:32    DEBUG [connection::receive_from_socket] Waiting for header
+2025-10-23 16:27:32    DEBUG [ua_client::read] ReadResponse(TypeId:{self.TypeId}, ResponseHeader:{self.ResponseHeader}, Results:{self.Results}, DiagnosticInfos:{self.DiagnosticInfos})
+2025-10-23 16:27:32     INFO [ua_client::read] read
+2025-10-23 16:27:32    DEBUG [ua_client::_send_request] Sending: ReadRequest(TypeId:{self.TypeId}, RequestHeader:{self.RequestHeader}, Parameters:{self.Parameters})
+2025-10-23 16:27:32     INFO [connection::receive_from_socket] received header: Header(type:b'MSG', chunk_type:b'F', body_size:70, channel:6)
+2025-10-23 16:27:32    DEBUG [connection::receive_from_socket] Waiting for header
+2025-10-23 16:27:32    DEBUG [ua_client::read] ReadResponse(TypeId:{self.TypeId}, ResponseHeader:{self.ResponseHeader}, Results:{self.Results}, DiagnosticInfos:{self.DiagnosticInfos})
+2025-10-23 16:27:32     INFO [ua_client::read] read
+2025-10-23 16:27:32    DEBUG [ua_client::_send_request] Sending: ReadRequest(TypeId:{self.TypeId}, RequestHeader:{self.RequestHeader}, Parameters:{self.Parameters})
+2025-10-23 16:27:32     INFO [connection::receive_from_socket] received header: Header(type:b'MSG', chunk_type:b'F', body_size:70, channel:6)
+2025-10-23 16:27:32    DEBUG [connection::receive_from_socket] Waiting for header
+2025-10-23 16:27:32    DEBUG [ua_client::read] ReadResponse(TypeId:{self.TypeId}, ResponseHeader:{self.ResponseHeader}, Results:{self.Results}, DiagnosticInfos:{self.DiagnosticInfos})
+2025-10-23 16:27:32     INFO [ua_client::read] read
+2025-10-23 16:27:32    DEBUG [ua_client::_send_request] Sending: ReadRequest(TypeId:{self.TypeId}, RequestHeader:{self.RequestHeader}, Parameters:{self.Parameters})
+2025-10-23 16:27:32     INFO [connection::receive_from_socket] received header: Header(type:b'MSG', chunk_type:b'F', body_size:63, channel:6)
+2025-10-23 16:27:32    DEBUG [connection::receive_from_socket] Waiting for header
+2025-10-23 16:27:32    DEBUG [ua_client::read] ReadResponse(TypeId:{self.TypeId}, ResponseHeader:{self.ResponseHeader}, Results:{self.Results}, DiagnosticInfos:{self.DiagnosticInfos})
+2025-10-23 16:27:32    DEBUG [client::stop] stoping keepalive thread
+2025-10-23 16:27:32    DEBUG [client::run] keepalive thread has stopped
+2025-10-23 16:27:32     INFO [ua_client::close_session] close_session
+2025-10-23 16:27:32    DEBUG [ua_client::_send_request] Sending: CloseSessionRequest(TypeId:{self.TypeId}, RequestHeader:{self.RequestHeader}, DeleteSubscriptions:{self.DeleteSubscriptions})
+2025-10-23 16:27:32     INFO [connection::receive_from_socket] received header: Header(type:b'MSG', chunk_type:b'F', body_size:40, channel:6)
+2025-10-23 16:27:32    DEBUG [connection::receive_from_socket] Waiting for header
+2025-10-23 16:27:32     INFO [ua_client::close_secure_channel] close_secure_channel
+2025-10-23 16:27:32    DEBUG [ua_client::_send_request] Sending: CloseSecureChannelRequest(TypeId:{self.TypeId}, RequestHeader:{self.RequestHeader})
+2025-10-23 16:27:32     INFO [ua_client::disconnect_socket] Request to close socket received
+2025-10-23 16:27:32     INFO [ua_client::_run] Socket has closed connection
+2025-10-23 16:27:32     INFO [ua_client::disconnect_socket] Socket closed, waiting for receiver thread to terminate...
+2025-10-23 16:27:32     INFO [ua_client::_cancel_all_callbacks] Cancelling request 9
+2025-10-23 16:27:32     INFO [ua_client::_run] Thread ended
+2025-10-23 16:27:32     INFO [ua_client::disconnect_socket] Done closing socket: Receiving thread terminated, socket disconnected
+2025-10-23 16:27:32     INFO [opc_client::disconnect] Disconnected from server
