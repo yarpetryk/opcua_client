@@ -6,10 +6,10 @@ from opcua import Client
 class OPCClient:
     client: Client
 
-    def __init__(self, url: str):
+    def __init__(self, url: str, user:str = None, password:str = None):
         self.client = Client(url)
-        self.client.set_user("admin")
-        self.client.set_password("admin") 
+        self.client.set_user(user)
+        self.client.set_password(password) 
     
     def connect(self):
         """Connect to the OPC UA server"""
@@ -55,6 +55,7 @@ class OPCClient:
                                   "temp2": temp2,
                                   "motor_speed": motor_speed,
                                   "motor_status": motor_status}}
+            print(data)
         except Exception as e:
             error(f"Error reading data: {e}")
         return data
